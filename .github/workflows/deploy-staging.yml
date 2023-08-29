@@ -18,8 +18,10 @@ jobs:
     if: contains(github.event.pull_request.labels.*.name, 'stage')
 
     runs-on: ubuntu-latest
-
     steps:
+      - name: Set OPENSSL_CONF environment variable
+        run: |
+          export OPENSSL_CONF=/etc/ssl/openssl.cnf
       - uses: actions/checkout@v3
       - name: npm install and build webpack
         run: |
