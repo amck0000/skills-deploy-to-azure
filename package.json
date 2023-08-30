@@ -28,8 +28,8 @@
     "babel-loader": "^8.0.5",
     "jest": "^27.5.1",
     "standard": "^14.3.1",
-    "webpack": "^4.28.4",
-    "webpack-cli": "^3.2.1",
+    "webpack": "^4.44.2", // Use the latest compatible version
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
